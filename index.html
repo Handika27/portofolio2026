@@ -11,7 +11,7 @@
   <body>
     <header id="siteHeader">
       <div class="nav">
-        <a href="#hero" class="logo">Handika.</a>
+        <a href="#hero" class="logo">Handika<span></span>.</span></a>
         <button class="menu-btn" id="menuBtn" aria-label="Buka menu" aria-expanded="false">☰</button>
         <nav class="nav-links" id="navLinks">
           <a href="#hero">Beranda</a>
@@ -31,15 +31,17 @@
     <section id="hero" class="hero">
       <div class="wrap hero-inner">
         <div class="hero-text">
-          <div class="kicker"><span class="dot"></span>Terbuka untuk peluang junior</div>
+          <div class="hero-greet"></div>
           <h1>Handika Pratama</h1>
-          <p class="role-line"><b>Software Engineer</b> | <b>UI/UX Designer</b> | <b>Motion Graphics</b></p>
+          <p class="role-line"><b>Software Engineer</b> · <b>UI/UX Designer</b> · <b>Motion Graphics</b></p>
+          <p class="hero-desc">Mahasiswa Teknologi Informasi semester 7. Membuat aplikasi web yang fungsional, desain antarmuka yang intuitif, dan motion grafis yang menarik.</p>
           <div class="cta-row">
             <a href="#projects" class="btn btn-primary">Lihat Karya</a>
+            <a href="#contact" class="btn btn-ghost">Hubungi Saya</a>
           </div>
         </div>
         <div class="hero-photo-wrap">
-          <div class="hero-photo-glow"></div>
+          <div class="hero-photo-bg"></div>
           <img
             src="Assets/foto.png"
             alt="Foto Handika Pratama"
@@ -47,19 +49,67 @@
           />
         </div>
       </div>
+
+      <!-- 3 Quick Link Cards -->
+      <div class="wrap service-row">
+        <a href="#projects" class="service-card">
+          <div class="service-icon icon-blue">�</div>
+          <h4>Lihat Karya</h4>
+          <p>Jelajahi portofolio proyek dan desain yang sudah saya kerjakan.</p>
+          <span class="service-link">Buka Portofolio →</span>
+        </a>
+        <a href="#about" class="service-card">
+          <div class="service-icon icon-pink">👤</div>
+          <h4>Tentang</h4>
+          <p>Kenal lebih dekat tentang latar belakang, keahlian, dan pengalaman saya.</p>
+          <span class="service-link">Selengkapnya →</span>
+        </a>
+        <a href="#contact" class="service-card">
+          <div class="service-icon icon-peach">💬</div>
+          <h4>Hubungi</h4>
+          <p>Tertarik berkolaborasi? Mari diskusi proyek? Langsung kontak saya di sini.</p>
+          <span class="service-link">Mulai Bicara →</span>
+        </a>
+      </div>
     </section>
 
     <!-- ================= ABOUT ================= -->
     <section id="about">
       <div class="wrap">
-        <div class="section-head reveal">
-          <h2>Tentang Saya</h2>
-          <div class="underline"></div>
+        <div class="about-grid">
+          <div class="about-photo-col">
+            <div class="about-photo-bg"></div>
+            <img src="Assets/foto.png" alt="Foto Handika Pratama" class="about-photo" />
+          </div>
+          <div class="about-text-col">
+            <div class="section-head about-head reveal">
+              <h2>Tentang Saya</h2>
+              <div class="underline"></div>
+            </div>
+            <h3 class="about-title">👋 Hai, saya Handika Pratama</h3>
+            <p class="section-lead about-lead reveal">
+              Mahasiswa Teknologi Informasi semester 7 di Universitas Amikom Purwokerto. Memiliki pengalaman sebagai Koordinator Asisten Praktikum Multimedia, saya terbiasa menjembatani kreativitas visual dengan logika teknis.
+            </p>
+            <p class="section-lead about-lead reveal" style="margin-top: 10px;">
+              Saya menikmati proses membangun aplikasi web fungsional, merancang antarmuka pengguna yang intuitif, hingga memproduksi motion grafis yang interaktif.
+            </p>
+
+            <div class="about-tags reveal">
+              <div class="about-tag-item">
+                <div class="about-tag-num">2+</div>
+                <div class="about-tag-label">Tahun Pengalaman</div>
+              </div>
+              <div class="about-tag-item">
+                <div class="about-tag-num">12+</div>
+                <div class="about-tag-label">Kelas Asistensi</div>
+              </div>
+              <div class="about-tag-item">
+                <div class="about-tag-num">15+</div>
+                <div class="about-tag-label">Proyek / Desain</div>
+              </div>
+            </div>
+          </div>
         </div>
-        <p class="section-lead reveal" style="text-align: center">
-          Saya adalah mahasiswa Teknologi Informasi semester 7 di Universitas Amikom Purwokerto. Memiliki pengalaman sebagai Koordinator Asisten Praktikum Multimedia, saya terbiasa menjembatani kreativitas visual dengan logika teknis. Saya
-          menikmati proses membangun aplikasi web fungsional, merancang antarmuka pengguna yang intuitif, hingga memproduksi motion grafis yang interaktif.
-        </p>
       </div>
     </section>
 
@@ -72,7 +122,7 @@
         </div>
         <div class="timeline reveal">
           <div class="tl-item">
-            <div class="tl-date">AGT 2025 — AGT 2026</div>
+            <div class="tl-date">Agustus 2025 — Agustus 2026</div>
             <div class="tl-role">Koordinator Asisten Bidang Multimedia</div>
             <div class="tl-org">Forum Asisten Amikom Purwokerto · Pengurus</div>
             <ul>
@@ -82,7 +132,7 @@
             </ul>
           </div>
           <div class="tl-item">
-            <div class="tl-date">AGT 2024 — AGT 2025</div>
+            <div class="tl-date">Agustus 2024 — Agustus 2025</div>
             <div class="tl-role">Asisten Dosen / Asisten Praktikum</div>
             <div class="tl-org">Forum Asisten Amikom Purwokerto</div>
             <ul>
@@ -112,6 +162,82 @@
             <h4>SMK Negeri 2 Purwokerto</h4>
             <p>Desain Pemodelan dan Informasi Bangunan</p>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICES 4 CARDS ================= -->
+    <section id="services-detail" class="services-detail">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <h2>Layanan yang Saya Tawarkan</h2>
+          <div class="underline"></div>
+          <p class="section-lead">Solusi kreatif dan teknis untuk kebutuhan digital Anda.</p>
+        </div>
+
+        <div class="feat-grid reveal">
+          <div class="feat-card bg-pink">
+            <div class="feat-head">
+              <h4>Custom Web App</h4>
+              <span class="feat-num">01</span>
+            </div>
+            <p>Laravel, HTML, CSS, JS. Dari landing page sampai aplikasi web kompleks dengan basis data.</p>
+          </div>
+
+          <div class="feat-card bg-mint">
+            <div class="feat-head">
+              <h4>UI / UX Design</h4>
+              <span class="feat-num">02</span>
+            </div>
+            <p>Wireframe, prototipe interaktif, dan design system yang rapi menggunakan Figma.</p>
+          </div>
+
+          <div class="feat-card bg-peach">
+            <div class="feat-head">
+              <h4>Motion & Animasi</h4>
+              <span class="feat-num">03</span>
+            </div>
+            <p>Animasi branding, motion infografis, dan visual interaktif untuk media sosial & presentasi.</p>
+          </div>
+
+          <div class="feat-card bg-sky">
+            <div class="feat-head">
+              <h4>QA & Testing</h4>
+              <span class="feat-num">04</span>
+            </div>
+            <p>Blackbox testing, test case planning, bug reporting, dan Postman untuk validasi API.</p>
+          </div>
+        </div>
+
+        <!-- Stats section -->
+        <div class="stats-block reveal">
+          <!--
+          <h3 class="stats-title">My numbers say it all</h3>
+          <p class="stats-sub">Pengalaman dan pencapaian selama mengerjakan proyek & organisasi.</p>
+
+          <div class="stats-row">
+            <div class="stat-pill">
+              <span class="stat-num">2+</span>
+              <span class="stat-label">Tahun Pengalaman</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">Proyek Selesai</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">800+</span>
+              <span class="stat-label">Jam Belajar & Praktik</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">3</span>
+              <span class="stat-label">Juara Lomba</span>
+            </div>
+            <div class="stat-pill">
+              <span class="stat-num">6+</span>
+              <span class="stat-label">Sertifikasi</span>
+            </div>
+          </div>
+        -->
         </div>
       </div>
     </section>
@@ -296,12 +422,24 @@
     </section>
 
     <footer>
-      <div class="wrap footer-row">
-        <div class="copy">© 2026 Handika Pratama. All Rights Reserved.</div>
-        <div class="social-row">
-          <a href="https://linkedin.com/in/handikapratama1/" target="_blank" rel="noopener">LinkedIn</a>
-          <span>|</span>
-          <a href="https://github.com/Handika27" target="_blank" rel="noopener">GitHub</a>
+      <div class="wrap">
+        <!--
+        <div class="footer-cta reveal">
+          <h2>Let's talk about <span>your project.</span></h2>
+          <p>Jadi, apa proyek Anda? Mari diskusikan dan wujudkan bersama. Tertarik untuk berkolaborasi dalam proyek pengembangan atau desain?</p>
+          <a href="mailto:handikatama003@gmail.com" class="btn">
+            <svg viewBox="0 0 24 24" class="btn-icon"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+            Mari Bicara
+          </a>
+        </div>
+      -->
+        <div class="footer-row">
+          <div class="copy">© 2026 Handika Pratama. All Rights Reserved.</div>
+          <div class="social-row">
+            <a href="https://linkedin.com/in/handikapratama1/" target="_blank" rel="noopener">LinkedIn</a>
+            <span>|</span>
+            <a href="https://github.com/Handika27" target="_blank" rel="noopener">GitHub</a>
+          </div>
         </div>
       </div>
     </footer>
